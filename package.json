@@ -29,7 +29,8 @@
 	"homepage": "https://github.com/inclusive-design/stylelint-config#readme",
 	"dependencies": {
 		"stylelint": "^16.26.1",
-		"stylelint-config-standard": "^39.0.1"
+		"stylelint-config-standard": "^39.0.1",
+		"stylelint-order": "^7.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^20.3.0",
