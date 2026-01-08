@@ -1,0 +1,51 @@
+{
+	"name": "@inclusive-design/stylelint-config",
+	"version": "0.1.0",
+	"description": "Shareable Stylelint configuration for the Inclusive Design Research Centre.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"lint": "run-s -l lint:*",
+		"lint:markdown": "markdownlint-cli2 \"**/*.md\"",
+		"lint:scripts": "eslint",
+		"test": "node --test",
+		"prepare": "husky"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/inclusive-design/stylelint-config.git"
+	},
+	"keywords": [
+		"stylelint"
+	],
+	"author": {
+		"name": "OCAD University",
+		"email": "idrc@ocadu.ca"
+	},
+	"license": "BSD-3-Clause",
+	"bugs": {
+		"url": "https://github.com/inclusive-design/stylelint-config/issues"
+	},
+	"homepage": "https://github.com/inclusive-design/stylelint-config#readme",
+	"dependencies": {
+		"stylelint": "^16.26.1",
+		"stylelint-config-standard": "^39.0.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^20.3.0",
+		"@commitlint/config-conventional": "^20.3.0",
+		"@inclusive-design/eslint-config": "^0.1.1",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.2.7",
+		"markdownlint-cli2": "^0.20.0",
+		"npm-run-all2": "^8.0.4"
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix"
+		],
+		"*.md": [
+			"markdownlint-cli2 --fix"
+		]
+	}
+}
