@@ -6,8 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"lint": "run-s -l lint:*",
-		"lint:markdown": "markdownlint-cli2 \"**/*.md\"",
-		"lint:scripts": "eslint",
+		"lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
+		"lint:eslint": "eslint",
 		"test": "node --test",
 		"prepare": "husky"
 	},
@@ -36,16 +36,17 @@
 		"@commitlint/cli": "^20.3.0",
 		"@commitlint/config-conventional": "^20.3.0",
 		"@inclusive-design/eslint-config": "^0.1.1",
+		"@inclusive-design/markdownlint-config": "^0.1.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.7",
-		"markdownlint-cli2": "^0.20.0",
 		"npm-run-all2": "^8.0.4"
 	},
 	"lint-staged": {
-		"*.js": [
+		"*.{cjs,js,json,jsonc,mjs}": [
 			"eslint --fix"
 		],
 		"*.md": [
+			"eslint --fix",
 			"markdownlint-cli2 --fix"
 		]
 	}
