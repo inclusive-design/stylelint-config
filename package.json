@@ -42,10 +42,11 @@
 		"npm-run-all2": "^8.0.4"
 	},
 	"lint-staged": {
-		"*.js": [
+		"*.{cjs,js,json,jsonc,mjs}": [
 			"eslint --fix"
 		],
 		"*.md": [
+			"eslint --fix",
 			"markdownlint-cli2 --fix"
 		]
 	}
