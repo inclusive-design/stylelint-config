@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/inclusive-design/stylelint-config/compare/v0.1.0...v0.1.1) (2026-04-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint to v17 ([#13](https://github.com/inclusive-design/stylelint-config/issues/13)) ([bda177b](https://github.com/inclusive-design/stylelint-config/commit/bda177b2309d3cd81d9f1772e1322fa8ceacc4d2))
+* **deps:** update dependency stylelint-order to v8 ([#17](https://github.com/inclusive-design/stylelint-config/issues/17)) ([7b23772](https://github.com/inclusive-design/stylelint-config/commit/7b2377285201c877809941cca09be1b7b737507e))
+
 ## [0.1.0](https://github.com/inclusive-design/stylelint-config/compare/v0.1.0...v0.1.0) (2026-01-08)
 
 
