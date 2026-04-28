@@ -1,4 +1,4 @@
-export default {
+const config = {
 	extends: 'stylelint-config-standard',
 	plugins: [
 		'stylelint-order',
@@ -7,3 +7,5 @@ export default {
 		'order/properties-alphabetical-order': true,
 	},
 };
+
+export default config;
